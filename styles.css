@@ -1,0 +1,25 @@
+body {
+  background: blue;
+}
+
+.content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+@supports (display: grid) {
+  .content {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+    grid-auto-rows: minmax(26vh, 190px);
+  }
+}
+
+.first {
+  border: 1px solid #333;
+}
