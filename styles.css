@@ -156,6 +156,24 @@ body {
 }
 /* About section end*/
 
+/* Footer section start */
+.footer-wrapper_description {
+  background-color: #222222;
+  height: 5rem;
+  margin-top: 5rem;
+}
+
+.footer-wrapper_description > p {
+  color: white;
+}
+
+.footer-wrapper_description > p > a {
+  color: #72b489;
+  padding-left: 0.1rem;
+  text-decoration: none;
+}
+/* Footer section end */
+
 /*extra code for feature query later*/
 /* @supports (display: grid) {
   .content {
