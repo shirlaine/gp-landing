@@ -1,5 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background: blue;
 }
 
 .content {
@@ -11,15 +15,44 @@ body {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-@supports (display: grid) {
+
+.grid {
+  display: grid;
+}
+
+.landing-wrapper {
+  grid-template-rows: repeat(9, 1fr);
+  background-color: lime;
+  height: 66vh;
+  background: url(https://cdn.guavapass.com/marketing/page/photos/images/000/000/005/original/singapore-mobile.png?1521444608);
+  background-size: cover;
+  box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 0.3);
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar {
+  grid-row: 1/2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-bar__links {
+  padding: 0.8rem 2rem 0 0;
+}
+
+.nav-bar__language {
+  font-size: 0.8em;
+}
+
+/* @supports (display: grid) {
   .content {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(100px, auto));
     grid-auto-rows: minmax(26vh, 190px);
   }
-}
-
-.first {
-  border: 1px solid #333;
-}
+} */
